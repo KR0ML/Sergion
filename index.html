@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./src/style.css">
+   <link rel="stylesheet" href="./src/reset.css">
+   <title>Системы безопасности - Сергион Трейд</title>
+   <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__container _container">
+         <div class="header__wrapper">
+            <a href="#" class="header__logo"><img src="./img/logo.svg" alt=""></a>
+
+            <button class="burger" aria-label="Открыть меню">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+
+            <div class="header__menu">
+               <ul class="header__list">
+                  <li class="header__list-item">
+                     <a href="#" class="header__list-link">Главная</a>
+                  </li>
+                  <li class="header__list-item">
+                     <a href="#products" class="header__list-link">Услуги</a>
+                  </li>
+                  <li class="header__list-item">
+                     <a href="#about" class="header__list-link">О нас</a>
+                  </li>
+                  <li class="header__list-item">
+                     <a href="#advantages" class="header__list-link">Преимущества</a>
+                  </li>
+               </ul>
+
+               <div class="header__contacts">
+                  <div class="header__phones">
+                     <div class="header__phones-number">
+                        <img src="./img/contacts/phone.svg" alt="">
+                        <a href="tel: +375 29 388-28-28" class="number">+375 29 388-28-28 (А1)</a>
+                     </div>
+                     <div class="header__phones-number">
+                        <img src="./img/contacts/phone.svg" alt="">
+                        <a href="tel: +375 33 388-28-28" class="number">+375 33 388-28-28 (МТС)</a>
+                     </div>
+                  </div>
+                  <a href="https://t.me/+375333882828" class="header__tg"><img src="./img/contacts/tg.svg" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main>
+      <section class="hero">
+         <div class="hero__container _container">
+            <h1 class="hero__title">Продажа и монтаж<br>
+               систем безопасности<br>
+               вашего имущества под ключ</h1>
+
+            <div class="hero__info">
+               <div class="hero__info-item">
+                  <img src="./img/hero-icons/doc-icon.svg" alt="" class="hero__info-img">
+                  <p class="hero__info-text">Гарантия на оборудование</p>
+               </div>
+               <div class="hero__info-item">
+                  <img src="./img/hero-icons/percent-icon.svg" alt="" class="hero__info-img">
+                  <p class="hero__info-text">Рассрочка платежа до 3 мес.</p>
+               </div>
+               <div class="hero__info-item">
+                  <img src="./img/hero-icons/client-icon.svg" alt="" class="hero__info-img">
+                  <p class="hero__info-text">Высококлассные специалисты</p>
+               </div>
+               <div class="hero__info-item">
+                  <img src="./img/hero-icons/free-icon.svg" alt="" class="hero__info-img">
+                  <p class="hero__info-text">Онлайн-доступ к камерам бесплатно</p>
+               </div>
+            </div>
+
+            <button class="hero__button" id="openPopup">Заказать бесплатную консультацию</button>
+
+            <div class="popup__overlay" id="popup">
+               <div class="popup">
+                  <button class="close__btn" id="closePopup">×</button>
+                  <h2 class="popup__title">Бесплатная консультация</h2>
+                  <h3 class="popup__subtitle">Оставьте свой номер и мы Вам перезвоним!</h3>
+
+                  <input type="text" class="name" id="name" placeholder="Имя" data-reg="^[А-Яа-яЁё]+([ -][А-Яа-яЁё]+)*$"
+                     required>
+                  <input type="tel" id="phone" value="+375 " name="phone" data-reg="^\+375 \((25|29|33|44)\) \d{3}-\d{2}-\d{2}$" required
+                     class="input__number" placeholder="(00) 000-00-00">
+
+                  <button class="popup__confirm">Отправить заявку</button>
+
+                  <p class="popup__check">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                     соглашаетесь c политикой конфиденциальности</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="products" id="products">
+         <div class="products__container _container">
+
+            <h2 class="products__title">Установим для вас:</h2>
+
+
+            <div class="products__content">
+               <div class="product__item">
+                  <img src="./img/products/1.png" alt="" class="product__item-img">
+                  <h3 class="product__item-title">Видеонаблюдение</h3>
+                  <p class="product__item-price">от 380 руб</p>
+                  <p class="product__item-info">HD CCTV — это  технология, при помощи которой передача первичного
+                     цифрового потока производится по коаксильным кабелям.<br><br> HD-TVI (High Definition Transport
+                     Video Interface) — с помощью данной технологии возможна передача аудио и видеосигналов
+                     с разрешением 720Р/960Р/1080Р, а также управление камерами  на расстояние до 500 м.<br><br> IP
+                     видеонаблюдение  (цифровые системы видеонаблюдения) - позволяет использовать преимущества
+                     технологий интернета, беспроводной передачи данных. </p>
+               </div>
+
+               <div class="product__item">
+                  <img src="./img/products/2.png" alt="" class="product__item-img">
+                  <h3 class="product__item-title">Охранная сигнализация (GSM)</h3>
+                  <p class="product__item-price">от 560 руб</p>
+                  <p class="product__item-info">GSM - сигнализация. При срабатывании охранного извещателя сигнализация
+                     включит сирену, позвонит или отправит SMS вам и сторожу. Данным видом сигнализации можно управлять
+                     удалённо (постановка/снятие на охрану) с помощью SMS - команд. Такой вид сигнализации широко
+                     распространен на отдалённых от города объектах (дача, усадьба и т.д.)</p>
+               </div>
+
+               <div class="product__item">
+                  <img src="./img/products/3.png" alt="" class="product__item-img">
+                  <h3 class="product__item-title">Пожарная Сигнализация</h3>
+                  <p class="product__item-price">от 380 руб</p>
+                  <p class="product__item-info">В зависимости от назначения используемого помещения могут
+                     устанавливаться различные виды извещателей, такие как дымовые (реагирующие на дым), тепловые
+                     (реагирующие на пламя) и ручные пожарные извещатели. Как только извещатель зафиксирует подобное
+                     явление, включается система оповещения о пожаре, она может быть речевой, световой или звуковой, и
+                     система передачи извещений о чрезвычайной ситуации УОО СПИ "Молния" предусматривающая вывод сигнала
+                     на пульт диспетчеру.</p>
+               </div>
+
+               <div class="product__item">
+                  <img src="./img/products/4.png" alt="" class="product__item-img">
+                  <h3 class="product__item-title">Домофоны и СКУД</h3>
+                  <p class="product__item-price">от 220 руб</p>
+                  <p class="product__item-info">Домофон - очень полезное электронное устройство, которое позволяет
+                     владельцу установить голосовой или визуальный контакт с посетителем, не открывая дверей. Установка
+                     аудио или видеодомофона решит проблему ограничения доступа на территорию нежелательных лиц. </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="about" id="about">
+         <div class="about__container _container">
+
+            <div class="about__content">
+               <h2 class="about__title">О нас</h2>
+               <p class="about__text">Мы компания "Сергион Трейд". На рынке систем безопасности уже более 10 лет.
+                  Занимаемся продажей, монтажом, наладкой, ремонтом, а так же технических обслуживанием охранных систем.
+                  Каждый день мы совершенствуемся, обучаемся чему-то новому и создаём лучшие условия для наших клиентов.
+                  Мы ценим и уважаем каждого покупателя, наши специалисты с радостью помогут выбрать Вам идеальную
+                  охранную систему, которая будет радовать не один десяток лет. В нашей компании предусмотрен
+                  индивидуальный подход и гибкая система оплаты. Будем рады видеть и Вас в числе наших дорогих
+                  покупателей.</p>
+               <p class="about__text-bot">Мы за безопасность вашего имущества!</p>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="advantages" id="advantages">
+         <div class="advantages__container _container">
+            <h2 class="advantages__title">Наши преимущества:</h2>
+
+            <div class="advantages__content">
+               <div class="advantages__content-item">
+                  <p class="advantages__item-icon">1</p>
+                  <h3 class="advantages__item-title">Установка (монтаж)<br>оборудования</h3>
+                  <p class="advantages__item-text">Качественно и в установленные сроки выполним весь объем работ "под
+                     ключ". Будь то сложный проект или самый простой. Мы предоставляем гарантии на наши работы и
+                     отвечаем за их работоспособность. Наши специалисты имеют большой опыт работы и нами произведена
+                     установка видеонаблюдения на многих объектах. Всегда наши клиенты остаются довольны и для нас это
+                     лучшая благодарность.</p>
+               </div>
+
+               <div class="advantages__content-item">
+                  <p class="advantages__item-icon">2</p>
+                  <h3 class="advantages__item-title">Ремонт, наладка, техническое обслуживание</h3>
+                  <p class="advantages__item-text">Если не можете разобраться, как наладить системы контроля и
+                     управления доступа, мы поможем вам. У нас работают только специалисты, которые знают свое
+                     дело.Также мы будем следить всегда за работоспособностью систем наших клиентов. Ваши риски отказа
+                     систем будут сведены к минимуму. Вы можете спать спокойно!</p>
+               </div>
+
+               <div class="advantages__content-item">
+                  <p class="advantages__item-icon">3</p>
+                  <h3 class="advantages__item-title">Продажа<br> оборудования</h3>
+                  <p class="advantages__item-text">Мы предлагаем только качественное и проввернное времеменм
+                     оборудование. У нас можно купить системы видеонаблюдения, пожарные сигнализации, системы охраны.
+                     Профессиональная консультация, компетентные мененджеры подскажут, что именно вам лучше. Полный
+                     комплекс услуг. Индивидуальный подход. Оптимальное соотношение наших товаров по критериям цена
+                     качество!</p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="footer__container _container">
+         <div class="footer__work">
+            <h3 class="footer__work-title">Мы работаем:</h3>
+            <p class="footer__work-text">Понедельник - пятница с 08.00 до 17.00</p>
+            <p class="footer__work-text">Суббота, воскресенье - выходной</p>
+         </div>
+
+         <div class="footer__contacts">
+            <h3 class="footer__contacts-title">Наши контакты:</h3>
+            <a href="" class="footer__contacts-text">+375 29 388-28-28 (А1)</a>
+            <a href="" class="footer__contacts-text">+375 33 388-28-28 (МТС)</a>
+         </div>
+      </div>
+
+      <div class="footer__wrapper">
+         <h4 class="footer__wrapper-text">Copyright © 2015-2024. ЧПУП Сергион Трейд системы безопасности. Кобрин. Все
+            права защищены.</h4>
+      </div>
+   </footer>
+
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
