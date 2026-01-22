@@ -36,11 +36,8 @@ p {
 }
 
 h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    color: white;
     text-decoration: none;
 }
 
@@ -57,7 +54,7 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -83,12 +80,12 @@ h4 {
 .header__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo {
     max-width: 200px;
     width: 100%;
-    margin-right: 10%;
 }
 
 .burger {
@@ -98,12 +95,13 @@ h4 {
 .header__menu {
     display: flex;
     justify-content: space-between;
+    max-width: 800px;
     width: 100%;
 }
 
 .header__list {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -178,54 +176,81 @@ HERO
 ====== */
 
 .hero {
-    background: no-repeat url(../img/hero-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
     position: relative;
+    min-height: 100vh;
+
+    background-color: var(--main-color);
+    background: no-repeat url(../img/hero__bg.png);
+    background-size: cover;
+    background-position: center top;
 }
 
 .hero::after {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
     z-index: 2;
 }
 
 .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    padding-top: 200px;
+    padding-top: 250px;
     z-index: 10;
 }
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url(../fonts/code_pro_bold.otf) format('opentype');
+}
+
 .hero__title {
-    max-width: 665px;
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 64px;
+    color: white;
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero__span {
+    color: #3A5A7A;
+}
+
+.hero__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 450px;
+    margin: 10px 0 70px 0;
+    text-align: center;
 }
 
 .hero__info {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 35px 45px;
-    margin-top: 65px;
-    margin-bottom: 90px;
-    max-height: 300px;
-    max-width: 720px;
+    gap: 25px;
+    max-width: 540px;
 }
 
 .hero__info-item {
+    padding: 15px;
     display: flex;
-    flex-direction: column;
+    border: var(--gray) solid 1px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .hero__info-img {
-    max-width: 36px;
-    margin-bottom: 10px;
+    max-width: 50px;
     fill: #fff;
+    margin-right: 15px;
 }
 
 .hero__info-text {
@@ -235,7 +260,15 @@ HERO
     max-width: 160px;
 }
 
-.hero__button {
+/* ==========================
+СТИЛЬ ДЛЯ КНОПКИ И POPUP МЕНЮ
+========================== */
+
+.popup__overlay {
+    display: none;
+}
+
+/* .hero__button {
     border: 0;
     border-radius: 50px;
     background-color: var(--main-color);
@@ -327,12 +360,10 @@ input {
 
 input.valid {
     border-color: #2ecc71;
-    /* зелёный */
 }
 
 input.invalid {
     border-color: #e74c3c;
-    /* красный */
 }
 
 input:focus {
@@ -372,7 +403,7 @@ input:focus {
     font-size: 12px;
     font-weight: 400;
     margin-top: 25px;
-}
+} */
 
 /* ======
 PRODUCTS
@@ -406,6 +437,7 @@ PRODUCTS
 
 .product__item-img {
     border-radius: 25px;
+    max-width: 225px;
 }
 
 .product__item-title {
@@ -434,23 +466,36 @@ ABOUT
 ====== */
 
 .about {
+    position: relative;
     background: url(../img/about__bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    z-index: 2;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 2;
 }
 
 .about__container {
+    position: relative;
     display: flex;
     justify-content: center;
     padding: 190px 0 200px 0;
+    z-index: 10;
 }
 
 .about__content {
     background-color: var(--second-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 70px 70px 50px 70px;
@@ -505,14 +550,20 @@ ADVANTAGES
     max-width: 30%;
 }
 
+.item__icon-circle {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
 .advantages__item-icon {
     display: flex;
     align-items: center;
     max-width: 100px;
-    max-height: 100px;
-    padding: 35px;
-    border-radius: 50%;
-    background-color: var(--main-color);
     font-size: 42px;
 }
 
@@ -677,7 +728,7 @@ ADAPTIVE
         position: fixed;
         top: 0;
         right: 0;
-        max-width: 360px;
+        max-width: 320px;
         height: 100vh;
         background: var(--main-color);
         padding: 120px 20px 20px;
@@ -689,13 +740,11 @@ ADAPTIVE
         z-index: 100;
     }
 
-    /* Когда открыто */
     .header__menu.is-active {
         display: flex;
         transform: translateX(0);
     }
 
-    /* Ссылки и контакты */
     .header__list {
         display: flex;
         flex-direction: column;
@@ -721,7 +770,6 @@ ADAPTIVE
         margin-bottom: 60px;
     }
 
-    /* Заблокировать скролл */
     body.is-locked {
         overflow: hidden;
     }
@@ -777,7 +825,6 @@ ADAPTIVE
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin: 150px 0;
     }
 
     .products__content {
@@ -831,18 +878,20 @@ ADAPTIVE
     }
 
     .hero__title {
-        font-size: 24px;
+        font-size: 36px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
     }
 
     .hero__info {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
-    .hero__info-item {
-        max-width: 100px;
+    .hero__info-img {
+        max-width: 45px;
     }
 
     .hero__button {
