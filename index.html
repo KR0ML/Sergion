@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./src/style.css">
+   <link rel="stylesheet" href="./src/reset.css">
+   <title>Комплексные системы безопасности под ключ - Сергион Трейд</title>
+   <meta name="description" content="Проектируем и устанавливаем системы безопасности любой сложности — видеонаблюдение, сигнализации, домофоны и контроль доступа. Защита, которой можно доверять.">
+   <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__container _container">
+         <div class="header__wrapper">
+            <a href="#" class="header__logo"><img src="./img/logo.svg" alt="Логотип Сергион Трейд"></a>
+
+            <button class="burger" aria-label="Открыть меню">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+
+            <div class="header__menu">
+               <ul class="header__list">
+                  <li class="header__list-item">
+                     <a href="#" class="header__list-link">Главная</a>
+                  </li>
+                  <li class="header__list-item">
+                     <a href="#products" class="header__list-link">Услуги</a>
+                  </li>
+                  <li class="header__list-item">
+                     <a href="#about" class="header__list-link">О нас</a>
+                  </li>
+                  <li class="header__list-item">
+                     <a href="#advantages" class="header__list-link">Преимущества</a>
+                  </li>
+               </ul>
+
+               <div class="header__contacts">
+                  <div class="header__phones">
+                     <div class="header__phones-number">
+                        <img src="./img/contacts/phone.svg" alt="Телефон МТС">
+                        <a href="tel: +375 33 388-28-28" class="number">+375 33 388-28-28 (МТС)</a>
+                     </div>
+                     <div class="header__phones-number">
+                        <img src="./img/contacts/phone.svg" alt="Телефон А1">
+                        <a href="tel: +375 29 388-28-28" class="number">+375 29 388-28-28 (А1)</a>
+                     </div>
+                  </div>
+                  <a href="https://t.me/+375333882828" class="header__tg"><img src="./img/contacts/tg.svg" alt="Телеграмм"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main>
+      <section class="hero">
+         <div class="hero__overlay"></div>
+         <div class="hero__container _container">
+            <h1 class="hero__title">Продажа и монтаж охранных систем под ключ в Бресте</h1>
+            <h2 class="hero__subtitle">Ваш активный помощник в безопасности</h2>
+
+            <div class="hero__info">
+               <div class="hero__info-item">
+                  <img src="./img/hero-icons/doc-icon.svg" alt="Гарантия на оборудование" class="hero__info-img">
+                  <p class="hero__info-text">Гарантия на оборудование</p>
+               </div>
+               <div class="hero__info-item">
+                  <img src="./img/hero-icons/percent-icon.svg" alt="Рассрочка платежа " class="hero__info-img">
+                  <p class="hero__info-text">Рассрочка платежа до 3 мес.</p>
+               </div>
+               <div class="hero__info-item">
+                  <img src="./img/hero-icons/client-icon.svg" alt="Высококлассные специалисты" class="hero__info-img">
+                  <p class="hero__info-text">Высококлассные специалисты</p>
+               </div>
+               <div class="hero__info-item">
+                  <img src="./img/hero-icons/free-icon.svg" alt="Онлайн-доступ к камерам " class="hero__info-img">
+                  <p class="hero__info-text">Онлайн-доступ к камерам бесплатно</p>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="products" id="products">
+         <div class="products__container _container">
+
+            <h2 class="products__title">Наши услуги</h2>
+
+            <div class="products__grid">
+
+               <!-- Видеонаблюдение -->
+               <div class="product-card">
+                  <div class="product-card__inner">
+
+                     <div class="product-card__side product-card__front">
+                        <div class="product-card__icon">
+                           <img src="./img/products/security-camera.svg" alt="Видеонаблюдение">
+                        </div>
+
+                        <h3 class="product-card__title">Видеонаблюдение</h3>
+                        <p class="product-card__desc">Установка и настройка систем видеонаблюдения.</p>
+
+                        <div class="product-card__bottom">
+                           <span class="product-card__price">От 480 руб</span>
+                           <button class="product-card__btn js-flip">Подробнее →</button>
+                        </div>
+                     </div>
+
+                     <div class="product-card__side product-card__back">
+                        <h3>Что входит</h3>
+                        <p>• Подбор оборудования<br>• Монтаж<br>• Онлайн-доступ<br>• Гарантия 12 мес</p>
+                        <button class="product-card__btn js-flip">← Назад</button>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- Охранная сигнализация -->
+               <div class="product-card">
+                  <div class="product-card__inner">
+
+                     <div class="product-card__side product-card__front">
+                        <div class="product-card__icon">
+                           <img src="./img/products/security-alarm.svg" alt="Охранная сигнализация">
+                        </div>
+
+                        <h3 class="product-card__title">Охранная сигнализация</h3>
+                        <p class="product-card__desc">
+                           Комплексные решения для защиты объекта.
+                        </p>
+
+                        <div class="product-card__bottom">
+                           <span class="product-card__price">от 650 руб</span>
+                           <button class="product-card__btn js-flip">Подробнее →</button>
+                        </div>
+                     </div>
+
+                     <div class="product-card__side product-card__back">
+                        <h3>Что входит</h3>
+                        <p>• Датчики движения<br>• Панели управления<br>• Тест и настройка</p>
+                        <button class="product-card__btn js-flip">← Назад</button>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- Пожарная сигнализация -->
+               <div class="product-card">
+                  <div class="product-card__inner">
+
+                     <div class="product-card__side product-card__front">
+                        <div class="product-card__icon">
+                           <img src="./img/products/fire-alarm.svg" alt="Пожарная сигнализация">
+                        </div>
+
+                        <h3 class="product-card__title">Пожарная сигнализация</h3>
+                        <p class="product-card__desc">
+                           Монтаж систем оповещения и датчиков дыма.
+                        </p>
+
+                        <div class="product-card__bottom">
+                           <span class="product-card__price">Договорная</span>
+                           <button class="product-card__btn js-flip">Подробнее →</button>
+                        </div>
+                     </div>
+
+                     <div class="product-card__side product-card__back">
+                        <h3>Что входит</h3>
+                        <p>• Датчики дыма<br>• Панели контроля<br>• Тест и ввод в эксплуатацию</p>
+                        <button class="product-card__btn js-flip">← Назад</button>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- Домофон -->
+               <div class="product-card">
+                  <div class="product-card__inner">
+
+                     <div class="product-card__side product-card__front">
+                        <div class="product-card__icon">
+                           <img src="./img/products/smart-doorbell.svg" alt="Домофон">
+                        </div>
+
+                        <h3 class="product-card__title">Домофон</h3>
+                        <p class="product-card__desc">
+                           Установка видео/аудио домофонов.
+                        </p>
+
+                        <div class="product-card__bottom">
+                           <span class="product-card__price">Договорная</span>
+                           <button class="product-card__btn js-flip">Подробнее →</button>
+                        </div>
+                     </div>
+
+                     <div class="product-card__side product-card__back">
+                        <h3>Что входит</h3>
+                        <p>• Видео/аудио связь<br>• Подключение к домофону<br>• Гарантия</p>
+                        <button class="product-card__btn js-flip">← Назад</button>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- СКУД -->
+               <div class="product-card">
+                  <div class="product-card__inner">
+
+                     <div class="product-card__side product-card__front">
+                        <div class="product-card__icon">
+                           <img src="./img/products/security-systems.svg" alt="СКУД">
+                        </div>
+
+                        <h3 class="product-card__title">СКУД</h3>
+                        <p class="product-card__desc">
+                           Системы контроля доступа для бизнеса.
+                        </p>
+
+                        <div class="product-card__bottom">
+                           <span class="product-card__price">Договорная</span>
+                           <button class="product-card__btn js-flip">Подробнее →</button>
+                        </div>
+                     </div>
+
+                     <div class="product-card__side product-card__back">
+                        <h3>Что входит</h3>
+                        <p>• Считыватели<br>• Пропускной контроль<br>• Интеграция с системой</p>
+                        <button class="product-card__btn js-flip">← Назад</button>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="about" id="about">
+         <div class="about__container _container">
+
+            <div class="about__content">
+               <h2 class="about__title">О нас</h2>
+               <p class="about__text">Мы компания "Сергион Трейд". На рынке систем безопасности уже более 10 лет.
+                  Занимаемся продажей, монтажом, наладкой, ремонтом, а так же технических обслуживанием охранных систем по всей Брестской области.
+                  Каждый день мы совершенствуемся, обучаемся чему-то новому и создаём лучшие условия для наших клиентов.
+                  Мы ценим и уважаем каждого покупателя, наши специалисты с радостью помогут выбрать Вам идеальную
+                  охранную систему, которая будет радовать не один десяток лет. В нашей компании предусмотрен
+                  индивидуальный подход и гибкая система оплаты. Будем рады видеть и Вас в числе наших дорогих
+                  покупателей.</p>
+               <p class="about__text-bot">Мы за безопасность вашего имущества!</p>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="advantages" id="advantages">
+         <div class="advantages__container _container">
+            <h2 class="advantages__title">Наши преимущества:</h2>
+
+            <div class="advantages__content">
+               <div class="advantages__content-item">
+                  <div class="item__icon-circle">
+                     <p class="advantages__item-icon">1</p>
+                  </div>
+                  <h3 class="advantages__item-title">Установка (монтаж)<br>оборудования</h3>
+                  <p class="advantages__item-text">Качественно и в установленные сроки выполним весь объем работ "под
+                     ключ". Будь то сложный проект или самый простой. Мы предоставляем гарантии на наши работы и
+                     отвечаем за их работоспособность. Наши специалисты имеют большой опыт работы и нами произведена
+                     установка видеонаблюдения на многих объектах. Всегда наши клиенты остаются довольны и для нас это
+                     лучшая благодарность.</p>
+               </div>
+
+               <div class="advantages__content-item">
+                  <div class="item__icon-circle">
+                     <p class="advantages__item-icon">2</p>
+                  </div>
+                  <h3 class="advantages__item-title">Ремонт, наладка, техническое обслуживание</h3>
+                  <p class="advantages__item-text">Если не можете разобраться, как наладить системы контроля и
+                     управления доступа, мы поможем вам. У нас работают только специалисты, которые знают свое
+                     дело.Также мы будем следить всегда за работоспособностью систем наших клиентов. Ваши риски отказа
+                     систем будут сведены к минимуму. Вы можете спать спокойно!</p>
+               </div>
+
+               <div class="advantages__content-item">
+                  <div class="item__icon-circle">
+                     <p class="advantages__item-icon">3</p>
+                  </div>
+                  <h3 class="advantages__item-title">Продажа<br> оборудования</h3>
+                  <p class="advantages__item-text">Мы предлагаем только качественное и проверенное временем
+                     оборудование. У нас можно купить системы видеонаблюдения, пожарные сигнализации, системы охраны.
+                     Профессиональная консультация, компетентные мененджеры подскажут, что именно вам лучше. Полный
+                     комплекс услуг. Индивидуальный подход. Оптимальное соотношение наших товаров по критериям цена
+                     качество!</p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="footer__container _container">
+         <div class="footer__work">
+            <h3 class="footer__work-title">Мы работаем:</h3>
+            <p class="footer__work-text">Понедельник - пятница с 08.00 до 17.00</p>
+            <p class="footer__work-text">Суббота, воскресенье - выходной</p>
+         </div>
+
+         <div class="footer__contacts">
+            <h3 class="footer__contacts-title">Наши контакты:</h3>
+            <a href="" class="footer__contacts-text">+375 33 388-28-28 (МТС)</a>
+            <a href="" class="footer__contacts-text">+375 29 388-28-28 (А1)</a>
+         </div>
+      </div>
+
+      <div class="footer__wrapper">
+         <h4 class="footer__wrapper-text">Copyright © 2015-2024. ЧПУП Сергион Трейд системы безопасности. Кобрин. Все
+            права защищены.</h4>
+      </div>
+   </footer>
+
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
